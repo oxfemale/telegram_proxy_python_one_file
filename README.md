@@ -1,5 +1,14 @@
 # Async MTProto Proxy #
 
+One shot telegram proxy python file
+
+On Debian/Ubuntu:
+```bash
+apt install git curl build-essential libssl-dev zlib1g-dev python3 pip3
+```
+
+2. Edit this basic service (especially paths and params):
+```bash
 mcedit /etc/systemd/system/mtprotoproxy.service
 
 [Unit]
@@ -24,3 +33,4 @@ systemctl restart mtprotoproxy.service
 systemctl status mtprotoproxy.service
 systemctl stop mtprotoproxy.service
 systemctl enable mtprotoproxy.service
+```
